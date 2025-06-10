@@ -1,0 +1,181 @@
+@import "./bootstrap.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #1E2A38;
+    --active: #3BAA92;
+    --importantColor: #C5A880;
+    --secondaryColor: #3BAA92;
+    --primaryText: #1E2A38;
+    --secondaryText: #6C757D;
+    --errors: #D9534F;
+
+    /* BOOTSTRAP */
+    --bs-nav-pills-link-active-bg: none;
+}
+
+body, html{
+    overflow-x: hidden;
+    background-color: var(--background);
+    font-family: Josefin Sans;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: var(--bgNav);
+    padding: 2%;
+    font-size: large;
+}
+
+hr{
+    background-color: var(--importantColor);
+    height: 3px;
+}
+
+i {
+    color: var(--importantColor);
+    font-size: 9rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* CLASES */
+
+.titHome {
+    font-size: 6rem;
+}
+
+.titAdmin {
+    margin-top: 4%;
+}
+
+.titUser {
+    margin-top: 2%;
+}
+
+.titTask {
+    font-size: 1rem;
+}
+
+.taskIcon {
+    font-size: 1rem;
+    color: var(--secondaryText);
+}
+
+.card2 {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card2:hover {
+    box-shadow: 0 0 20px 0 var(--importantColor);
+}
+
+.noUnderline {
+    text-decoration: none;
+}
+
+.dangerForm {
+    background-color: #F8D7DA !important;
+}
+
+.successForm {
+    background-color: #D4EDDA !important;
+}
+
+/* ID */
+
+
+
+/* BOOTSTRAP */
+
+.nav {
+    --bs-nav-link-hover-color: transparent;
+}
+
+.nav-link{
+    color: var(--importantColor);
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-pills .nav-link.active{
+    color: white;
+    background-color: transparent;
+    --bs-nav-pills-link-active-bg: transparent;
+}
+
+.list-group-item {
+    border: transparent;
+}
+
+.btn {
+    border: transparent;
+}
+
+.btn i {
+    font-size: inherit;
+    color: inherit;
+}
+
+.bg-danger {
+    background-color: #b33530 !important;
+}
+
+.bg-info {
+    background-color: #428dc7 !important;
+}
+
+.bg-success {
+    background-color: #488048 !important;
+}
+
+.bg-warning {
+    background-color: #d9b52c !important;
+}
+
+.btn-primary {
+    background-color: #428dc7;
+    border: transparent;
+}
+
+.btn-primary:hover {
+    background-color: #0c68b8;
+}
+
+.btn-danger {
+    background-color: var(--errors);
+    border: transparent;
+}
+
+.btn-warning {
+    background-color: #ddda21;
+    border: transparent;
+}
+
+/* SWINGALERT */
+
+.swal-footer {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.swal-button {
+    margin: 0 10px; /* Espaciado entre botones */
+    padding: 10px 20px;
+}
+
+.btn-cancel {
+    background-color: #6c757d !important; /* Gris */
+    color: white !important;
+}
+
+.btn-confirm {
+    background-color: #d9534f !important; /* Rojo */
+    color: white !important;
+}
